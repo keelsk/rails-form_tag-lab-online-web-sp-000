@@ -2,9 +2,9 @@
 
 <%=form_tag students_path do%>
 <label>First Name</label><br>
-<%= text_field_tag :'student[first_name]', value ='student[first_name]'%>
+<%= text_field_tag :'student[first_name]', value ='student[:first_name]'%>
 
 <label>Last Name</label><br>
-<%= text_field_tag :'student[last_name]', value ='student[last_name]'%>
+<%= text_field_tag :'student[last_name]', value ='student[:last_name]'%>
 <%= submit_tag "Submit Student"%>
 <%end%>
